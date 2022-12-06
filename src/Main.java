@@ -123,13 +123,13 @@ public class Main {
         System.out.println("Задача 7");
         int one = 9;
         int two = 5;
-        int tree = 3;
-        if (one > two && one > tree) {
-            System.out.println("Число " + one + " больше, чем " + two + " и " + tree);
-        } else if (two > one && two > tree) {
-            System.out.println("Число " + two + " больше, чем " + one + " и " + tree);
+        int three = 3;
+        if (one > two && one > three) {
+            System.out.println("Число " + one + " больше, чем " + two + " и " + three);
+        } else if (two > one && two > three) {
+            System.out.println("Число " + two + " больше, чем " + one + " и " + three);
         } else {
-            System.out.println("Число " + tree + " больше, чем " + one + " и " + two);
+            System.out.println("Число " + three + " больше, чем " + one + " и " + two);
         }
     }
 }

@@ -6,6 +6,7 @@ public class Main {
         task4();
         task41();
         task5();
+        task6();
     }
     public static void task1 () {
         System.out.println("Задача 1");
@@ -89,5 +90,30 @@ public class Main {
         if (canRideTheAttractionWithoutAnAdult) {
             System.out.println("Если возраст ребенка равен " + age + ",то ему можно кататься на аттракционе без сопровождения взрослого");
         }
+    }
+    public static void task6 () {
+        System.out.println("Задача 6");
+        int capacityWagon = 102;
+        int sittingPlaces = 60;
+        int standingPlaces = capacityWagon - sittingPlaces;
+        int noFreeSittingPlaces = 60;
+        int noFreeStandingPlaces = 42;
+        int noFreePlaces = noFreeSittingPlaces + noFreeStandingPlaces;
+        int freePlaces = capacityWagon - noFreePlaces;
+        int freeSittingPlaces = sittingPlaces - noFreeSittingPlaces;
+        int freeStandingPlaces = standingPlaces - noFreeStandingPlaces;
+
+        if (freePlaces >= 1 && freePlaces <= 102) {
+            System.out.println("Есть свободные места в вагоне");
+        } else {
+            System.out.println("Свободных мест нет");
+        }
+        if (freePlaces >= 1 && freePlaces <=102 && freeSittingPlaces >=1 && freeSittingPlaces <=60) {
+            System.out.println("Свободных сидячих мест " +freeSittingPlaces);
+        }
+        if (freePlaces >= 1 && freePlaces <=102 && freeStandingPlaces >=1 && freeStandingPlaces <=standingPlaces) {
+            System.out.println("Свободных стоячих мест " + freeStandingPlaces);
+        }
+
     }
 }

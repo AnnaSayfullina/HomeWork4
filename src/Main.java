@@ -3,6 +3,7 @@ public class Main {
         task1();
         task2();
         task3();
+        task4();
     }
     public static void task1 () {
         System.out.println("Задача 1");
@@ -30,6 +31,26 @@ public class Main {
             System.out.println("Если скорость " + speed + ", то придется заплатить штраф");
         } else {
             System.out.println("Если скорость " + speed + ", то можно ездить спокойно");
+        }
+    }
+    public static void task4 () {
+        System.out.println("Задача 4");
+        int age = 25;
+        boolean needToGoToKindergarten = age >= 2 && age <= 6;
+        if (needToGoToKindergarten) {
+            System.out.println("Если возраст человека равен " + age + ",то ему нужно ходить в детский сад ");
+        }
+        boolean needToGoToSchool = age >= 7 && age <= 18;
+        if (needToGoToSchool) {
+            System.out.println("Если возраст человека равен " + age + ",то ему нужно ходить в школу ");
+        }
+        boolean needToGoToUniversity = age > 18 && age < 24;
+        if (needToGoToUniversity) {
+            System.out.println("Если возраст человека равен " + age + ",то ему нужно ходить в университет ");
+        }
+        boolean needToGoToWork = age >= 24;
+        if (needToGoToWork) {
+            System.out.println("Если возраст человека равен " + age + ",то ему нужно ходить на работу ");
         }
     }
 }

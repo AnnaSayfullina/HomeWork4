@@ -7,8 +7,10 @@ public class Main {
         task41();
         task5();
         task6();
+        task7();
     }
-    public static void task1 () {
+
+    public static void task1() {
         System.out.println("Задача 1");
         int age = 15;
         if (age >= 18) {
@@ -18,7 +20,7 @@ public class Main {
         }
     }
 
-    public static void task2 () {
+    public static void task2() {
         System.out.println("Задача 2");
         int temperature = 4;
         if (temperature >= 5) {
@@ -27,7 +29,8 @@ public class Main {
             System.out.println("На улице " + temperature + " градусов, нужно надеть шапку");
         }
     }
-    public static void task3 () {
+
+    public static void task3() {
         System.out.println("Задача 3");
         int speed = 61;
         if (speed > 60) {
@@ -36,7 +39,8 @@ public class Main {
             System.out.println("Если скорость " + speed + ", то можно ездить спокойно");
         }
     }
-    public static void task4 () {
+
+    public static void task4() {
         System.out.println("Задача 4");
         int age = 25;
         boolean needToGoToKindergarten = age >= 2 && age <= 6;
@@ -56,26 +60,24 @@ public class Main {
             System.out.println("Если возраст человека равен " + age + ",то ему нужно ходить на работу ");
         }
     }
-    public static void task41 () {
+
+    public static void task41() {
         System.out.println("Задача 4 второй способ");
         int age = 24;
         if (age >= 2 && age <= 6) {
             System.out.println("Если возраст человека равен " + age + ",то ему нужно ходить в детский сад ");
-        }
-        else if (age >= 7 && age <= 18) {
+        } else if (age >= 7 && age <= 18) {
             System.out.println("Если возраст человека равен " + age + ",то ему нужно ходить в школу ");
-        }
-        else if (age > 18 && age < 24) {
+        } else if (age > 18 && age < 24) {
             System.out.println("Если возраст человека равен " + age + ",то ему нужно ходить в университет ");
-        }
-        else if (age < 2) {
+        } else if (age < 2) {
             System.out.println("Если возраст человека равен " + age + ",то ему нужно быть с мамой ");
-        }
-        else {
+        } else {
             System.out.println("Если возраст человека равен " + age + ",то ему нужно ходить на работу ");
         }
     }
-    public static void task5 () {
+
+    public static void task5() {
         System.out.println("Задача 5");
         int age = 14;
         boolean canNotRideTheAttraction = age < 5;
@@ -91,7 +93,8 @@ public class Main {
             System.out.println("Если возраст ребенка равен " + age + ",то ему можно кататься на аттракционе без сопровождения взрослого");
         }
     }
-    public static void task6 () {
+
+    public static void task6() {
         System.out.println("Задача 6");
         int capacityWagon = 102;
         int sittingPlaces = 60;
@@ -108,12 +111,25 @@ public class Main {
         } else {
             System.out.println("Свободных мест нет");
         }
-        if (freePlaces >= 1 && freePlaces <=102 && freeSittingPlaces >=1 && freeSittingPlaces <=60) {
-            System.out.println("Свободных сидячих мест " +freeSittingPlaces);
+        if (freePlaces >= 1 && freePlaces <= 102 && freeSittingPlaces >= 1 && freeSittingPlaces <= 60) {
+            System.out.println("Свободных сидячих мест " + freeSittingPlaces);
         }
-        if (freePlaces >= 1 && freePlaces <=102 && freeStandingPlaces >=1 && freeStandingPlaces <=standingPlaces) {
+        if (freePlaces >= 1 && freePlaces <= 102 && freeStandingPlaces >= 1 && freeStandingPlaces <= standingPlaces) {
             System.out.println("Свободных стоячих мест " + freeStandingPlaces);
         }
+    }
 
+    public static void task7() {
+        System.out.println("Задача 7");
+        int one = 9;
+        int two = 5;
+        int tree = 3;
+        if (one > two && one > tree) {
+            System.out.println("Число " + one + " больше, чем " + two + " и " + tree);
+        } else if (two > one && two > tree) {
+            System.out.println("Число " + two + " больше, чем " + one + " и " + tree);
+        } else {
+            System.out.println("Число " + tree + " больше, чем " + one + " и " + two);
+        }
     }
 }
